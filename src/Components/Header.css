@@ -1,0 +1,27 @@
+.link-container {
+  background-color:  #70a1ff;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  margin: auto;
+  align-items: center;
+  height: 70px;
+}
+.links {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  padding-right: 20px;
+}
+.links:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.container {
+  background-color: white;
+  display: block;
+}

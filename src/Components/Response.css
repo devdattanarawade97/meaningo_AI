@@ -1,0 +1,28 @@
+.output-container {
+  font-size: 20px;
+  display: flex;
+
+  justify-content: flex-start;
+
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  height: auto;
+  margin-top: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.output {
+  display: inline-flex;
+  flex-direction: row;
+ 
+  background-color:#673DE6;
+ 
+  padding: 10px;
+  border-radius: 5px;
+  color: white
+  
+}
+.spinner {
+  margin-right: 10px;
+}

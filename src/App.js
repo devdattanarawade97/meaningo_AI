@@ -1,24 +1,59 @@
-import logo from './logo.svg';
+
+
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
 import './App.css';
+import HomePage from './Pages/HomePage';
+import LearnWithAI from './Pages/LearnWithAI'
+import Checkgrammer from './Pages/CheckGrammer';
+import Chatbot from './Pages/Chatbot';
+import CreateQuestions from './Pages/CreateQuestions'
+localStorage.setItem('timestamp', 'undefined')
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <HomePage></HomePage>,
+
+    },
+    {
+      path: '/home',
+      element: <HomePage></HomePage>,
+
+    },
+    {
+      path: '/learn',
+      element: <LearnWithAI placeHolderName="What you want to learn today ?..."></LearnWithAI>,
+
+    },
+    {
+      path: '/chatbot',
+      element: <Chatbot placeHolderName="Say Hii..."></Chatbot>,
+
+    },
+    {
+      path: '/learnenglish',
+      element: <Checkgrammer placeHolderName="Type Your English sentence here..."></Checkgrammer>
+
+    },
+    {
+      path: '/generatequestions',
+      element: <CreateQuestions placeHolderName="Enter your query here...(example : create 5 questions on science topic)"></CreateQuestions>
+
+    }
+
+
+  ]
+)
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <RouterProvider router={router}></RouterProvider>
+
   );
 }
 
