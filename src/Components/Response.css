@@ -16,11 +16,11 @@
   display: inline-flex;
   flex-direction: row;
  
-  background-color:#673DE6;
- 
+  background-color:#f1c40f;
+  font-weight: 700;
   padding: 10px;
   border-radius: 5px;
-  color: white
+  color: black
   
 }
 .spinner {

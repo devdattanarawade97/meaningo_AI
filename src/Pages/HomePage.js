@@ -25,7 +25,7 @@ function HomePage() {
 
                 🧠 Intelligent Learning. Our AI-driven platform personalizes education learning based on your individual strengths and areas for growth. Say goodbye to cookie-cutter learning!
                 <p className='subtitle-para'>No matter your level, our AI-driven platform is designed to provide a personalized and effective learning experience.</p>
-                <p className='subtitle-para'>Your little contribution will help us lot to improve platform.</p>
+                <p className='subtitle-para'>No doubt this platform will always free .Your little contribution will help us keep server running.</p>
             </div>
 
         </div>

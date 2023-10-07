@@ -3,7 +3,7 @@ import './SearchBar.css'
 import GetResponse from './GetResponse';
 
 import ParentResponse from './ParentRespose';
-import Typewriter from './TypeWritter';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function SearchBar(props) {
@@ -314,7 +314,7 @@ function SearchBar(props) {
             <div className='search-container'>
 
                 <input className="user-input" onChange={getUserInput} placeholder={props.placeHolderValue} value={userInput}></input>
-                <button className={buttonColor} onClick={handleClick} value={userInput} disabled={buttonClicked}>{props.buttonName}</button>
+                <button  className={buttonColor} onClick={handleClick} value={userInput} disabled={buttonClicked}>{props.buttonName}</button>
             </div>
 
 
