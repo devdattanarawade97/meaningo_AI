@@ -10,12 +10,13 @@ function SearchBar(props) {
 
     let [userInput, setUserInput] = useState('')
     let [userInputMsg, setUserInputMsg] = useState('')
-    let [output, setResponseOutput] = useState('')
+    let [output, setResponseOutput] = useState([])
     let [buttonClicked, updatedButtonClickStatus] = useState(false);
     let [displaySearching, updatedDisplaySearching] = useState(false);
     let [counterOn, setCounterStatus] = useState(false);
     let [buttonColor, setButtonColor] = useState('search-button');
     let [displaySpinner, setSpinnerStatus] = useState(false);
+
     //let [intervalId, setIntervalId] = useState(0);
     let intervalId;
     let [remainedSec, updatedSec] = useState(30);
@@ -249,6 +250,7 @@ function SearchBar(props) {
         intervalId = setInterval(decreamentCounter, 1000);
         setSpinnerStatus(false);
         updatedSec(30);
+        
     }
 
 
@@ -299,18 +301,20 @@ function SearchBar(props) {
 
 
 
+    
     return (
-
+       
 
         <div className="container">
-
-
-
             <div className='main-container'>
-                <ParentResponse InputValue={userInputMsg} OutputValue={output} className={displaySearching} spinnerStatus={displaySpinner}></ParentResponse>
-                {counterOn ? <div className='counter-container'><p className='counter'>take a breath for : {remainedSec}</p></div> : <></>}
+                
+            <ParentResponse InputValue={userInputMsg} OutputValue={output} className={displaySearching} spinnerStatus={displaySpinner}></ParentResponse>
+           {counterOn ? <div className='counter-container'><p className='counter'>take a breath for : {remainedSec}</p></div> : <></>}
+        
             </div>
 
+
+         
             <div className='search-container'>
 
                 <input className="user-input" onChange={getUserInput} placeholder={props.placeHolderValue} value={userInput}></input>

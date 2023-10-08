@@ -1,9 +1,10 @@
 
 import UserInput from "./UserInput"
 import Response from "./Response"
+import SearchBar from "./SearchBar";
 
 
-function ParentResponse(props) {
+function ParentResponse(props){
 
 
     return [

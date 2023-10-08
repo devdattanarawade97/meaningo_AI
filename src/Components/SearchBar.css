@@ -14,8 +14,17 @@
   min-height: 60vh;
 }
 
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  
+}
 .user-input {
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
   padding: 1px;
   width: 40vw;
@@ -24,26 +33,20 @@
   font-size: 19px;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(184, 181, 181, 0.3);
-}
-.search-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 20px;
+  margin-right: 10px;
 }
 .search-button {
   border-radius: 5px;
   width: 80px;
-  height: 37px;
+  height: 40px;
   cursor: pointer;
-  margin-left: 10px;
+  padding: 10px;
   background-color: #04bd92;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  border-color:  #04bd92;
   color: white;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 .input-label-container {
 }
@@ -74,12 +77,9 @@
 .button-off {
   border-radius: 5px;
   width: 80px;
-  height: 37px;
+  height: 40px;
   cursor: pointer;
-  margin-left: 10px;
-  background-color: #7dac90;
-
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: #1fc160;
   color: white;
   font-weight: 600;
   font-size: 16px;

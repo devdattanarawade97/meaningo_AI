@@ -7,7 +7,7 @@ function Header() {
     // <a href="https://www.buymeacoffee.com/meaningo" className="links" target='blank'>Donate</a>
     return (
 
-        <div className='heading-container'>
+        <div className='heading-container' class='navbar'>
 
             <div className="link-container">
                 <nav className='bg-black nav navbar-dark'>
