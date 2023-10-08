@@ -2,7 +2,7 @@
     "builds": [{ "src": "package.json", "use": "@vercel/node" }],
     "routes": [
       { "handle": "filesystem" },
-      { "src": "/.*", "dest": "index.html" }
+      { "src": "/.*", "dest": "./public/index.html" }
     ],
     "env": {
       "NODE_ENV": "production"
